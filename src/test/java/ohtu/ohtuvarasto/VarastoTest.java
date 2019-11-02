@@ -79,7 +79,7 @@ public class VarastoTest {
         assertEquals(0, varastoAlkuVäärin.getTilavuus(), vertailuTarkkuus);
         assertEquals(0, varastoAlkuVäärin.getSaldo(), vertailuTarkkuus);
         Varasto varastoAlkuTäynnä = new Varasto (7, 12);
-        assertEquals(6, varastoAlkuTäynnä.getTilavuus(), vertailuTarkkuus);
+        assertEquals(7, varastoAlkuTäynnä.getTilavuus(), vertailuTarkkuus);
         assertEquals(7, varastoAlkuTäynnä.getSaldo(), vertailuTarkkuus);
         
     }
