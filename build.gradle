@@ -5,7 +5,9 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * user guide available at https://guides.gradle.org/creating-new-gradle-builds/
  */
-
+plugins {
+    id 'checkstyle'
+}
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -13,6 +15,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 apply plugin: "jacoco" 
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -30,11 +33,11 @@ dependencies {
 }
 
 // Define the main class for the application
-mainClassName = 'ohtu.ohtuvarasto.Main'
+mainClassName = 'main.Main'
 
 jar {
     manifest {
-        attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+        attributes 'Main-Class': 'main.Main'
     }
 }
 
